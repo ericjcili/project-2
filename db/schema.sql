@@ -1,0 +1,5 @@
+
+DROP DATABASE IF EXISTS progrum_db;
+
+-- CREATE DATABASE
+CREATE DATABASE progrum_db;
