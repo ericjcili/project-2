@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progrum Tech Blog</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+        <h1 class="site">
+          <a class="site"href="/">Progrum</a> </br>
+          <b>The Tech Forum for Programmers</b>
+        </h1>
+        <nav class="navs">
+          <span><a href="/">Home</a></span> 
+          {{#if loggedIn}}
+          <a href="/dashboard">Dashboard</a>
+          <button id="logout" class="btn-no-style">Logout</button>
+          {{else}}
+          <a href="/login">Login</a>
+          {{/if}}
+        </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      Made with love by Eric, Kyaila, and Jacob.
+    </footer>
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+
+</body>
+
+</html>
