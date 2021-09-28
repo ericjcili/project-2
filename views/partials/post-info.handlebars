@@ -1,6 +1,9 @@
     <article class="post">
       <div class="title">
-        <span><a href="/post/{{id}}">{{title}}</a></span>
+        <span>
+            <a href="/post/{{id}}">➣ {{title}}<i class="fa-solid fa-circle-caret-down"></i></a>
+            
+        </span>
         <span class="details" style="float:right">Posted by {{user.username}} on {{format_date created_at}}</span><br>
         <span style="float:bottom-right">{{comments.length}} {{format_plural "comment" comments.length}}</span>
       </div>
