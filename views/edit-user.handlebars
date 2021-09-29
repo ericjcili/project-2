@@ -5,16 +5,16 @@
   </h2>
   <form class="edit-user-form">
     <div>
-      <label for="user-name">User Name</label>
-      <input name="user-name" type="text" value="{{user.username}}" />
+      <label for="user-name">Username</label>
+      <input autocomplete="off" name="user-name" type="text" value="{{user.username}}" />
     </div>
     <div>
       <label for="email">User Email</label>
-      <input name="email" value="{{user.email}}" />
+      <input autocomplete="off" name="email" value="{{user.email}}" />
     </div>
      <div>
       <label for="password">Password</label>         
-      <input type="password" name="password" />
+      <input autocomplete="off" type="password" name="password" />
     </div>
     <div>
       <input type="hidden" id="user-id" name="user-id" value={{user.id}} />

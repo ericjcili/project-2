@@ -6,9 +6,9 @@
   
   :root {
     /*main color*/
-    --one: black;
+    --one: rgb(0, 29, 76);
     /*background color*/
-    --two: white;
+    --two: rgb(227, 255, 249);
     /*text-hover color*/
     --thr: #3486eb;
   }
