@@ -1,4 +1,7 @@
 {{> post-info post}}
+{{#if post.tags.length}}
+<i style="font-size:small;">Tags: {{post.tags}}</i>
+{{/if}}
 
 {{#if loggedIn}}
 <form class="comment-form">

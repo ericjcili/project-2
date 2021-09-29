@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
             'post_text',
             'title',
             'created_at',
+            'tags'
           ],
         order: [[ 'created_at', 'DESC']],
         include: [
@@ -49,6 +50,7 @@ router.get('/post/:id', (req, res) => {
         'post_text',
         'title',
         'created_at',
+        'tags'
       ],
       include: [
         {

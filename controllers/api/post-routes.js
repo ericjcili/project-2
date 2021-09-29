@@ -10,8 +10,9 @@ router.get('/', (req, res) => {
             'post_text',
             'title',
             'created_at',
+            'tags'
           ],
-        order: [[ 'created_at', 'DESC']],
+        order: [[ 'created_at', 'DESC', 'tags']],
         include: [
             {
                 model: User,
@@ -44,6 +45,7 @@ router.get('/:id', (req, res) => {
         'post_text',
         'title',
         'created_at',
+        'tags'
       ],
       include: [
         {
@@ -77,7 +79,8 @@ router.post('/', withAuth, (req, res) => {
     Post.create({
         title: req.body.title,
         post_text: req.body.post_text,
-        user_id: req.session.user_id
+        user_id: req.session.user_id,
+        tags: req.body.tags
     })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {

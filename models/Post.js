@@ -28,6 +28,10 @@ Post.init(
                 model: 'user',
                 key: 'id'
             }
+        },
+        tags: {
+            type: DataTypes.STRING,
+            allowNull: true,
         }
     },
     {
