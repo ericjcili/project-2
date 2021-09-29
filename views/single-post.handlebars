@@ -16,7 +16,15 @@
 </form>
 {{/if}}
 
+{{#if post.comments.length}}
+<div class="comment-header">
+  <b style="font-size: 1em; text-align:left;">Comments:</b>
+  <i style="opacity: 40%">{{post.comments.length}}</i>
+</div>
 {{> comments post.comments}}
+{{else}}
+      <h3 style="text-align: center" class="empty">-- No Comments --</h3>
+{{/if}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
