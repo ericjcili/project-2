@@ -1,3 +1,4 @@
+
 ## Progrum Tech Blog
    
 ### Description
@@ -11,7 +12,7 @@ as well as ask questions and troubleshoot. Built using MySQL2, Express, Sequeliz
 https://progrum.herokuapp.com/
 
 ### Application Screenshot
-  
+  ![Progrum](https://user-images.githubusercontent.com/85600569/135783594-d1ac95c1-39f0-4112-b1ba-f134fd98d6f4.png)
 ### User Story
 
 ```
